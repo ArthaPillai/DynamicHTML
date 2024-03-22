@@ -77,6 +77,17 @@ This macro generates the HTML for the cover section using data passed to it.
 2. Processed data is passed to `report.html` when rendering.
 3. `report.html` uses macros from `macros.html` to dynamically build the webpage content based on the data.
 
+## Run
+
+To run this Flask application and view the dynamic HTML webpage, follow these steps:
+
+1. **Open `app.py`**: Open the `app.py` file in a development environment. Visual Studio Code (VS Code) is preferred because it provides excellent support for Python and Flask applications.
+2. **Run the Application**: In VS Code, you can simply click on the 'Run' button at the top right corner of the editor window to start the Flask application. Alternatively, you can open a terminal in VS Code, navigate to the directory containing `app.py`, and run the command `python app.py`.
+3. **View in Browser**: Once the application is running, the Flask server will start on a local development server, usually `http://127.0.0.1:5000/`. The exact address will be displayed in the VS Code terminal. Open this address in your web browser to view the rendered HTML file.
+4. **Making Changes**: If you need to make changes to the code or the data files (`Data.xlsx`, HTML templates), you can do so in your preferred editor. After making changes, save your files and run the application again to see the updated output in your web browser.
+
+By following these steps, you can easily run the Flask application, view the dynamic HTML webpage, and make iterative changes to your project.
+
 ## Conclusion
 
 This dynamic HTML webpage leverages Flask to serve a data-driven report. The data from `Data.xlsx` is processed and passed to HTML templates, where Jinja2 macros are used to render the report sections dynamically, creating a customized user experience based on the dataset.
