@@ -1,0 +1,253 @@
+<!-- Cover -->
+{% macro cover(section_data, pagenumber) %}
+<section id="{{ section_data.section_id }}" class="bg-page-cover">
+  <div class="logo-cover">
+    <img src="{{ section_data.logo_path }}" alt="Logo">
+  </div>
+  <div class="container">
+    <div class="text-cover" style="height:calc(100vh - 297px)">
+      <div class="row align-items-end h-100">
+        <div class="col-12">
+          <div class="row justify-content-center">
+            <div class="col-md-9 leftside-line p-3">
+              <h1>{{ section_data.title | safe }}</h1>
+              <p class="text-white mb-0">{{ section_data.subtitle }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-number">Page: </div>
+</section>
+{% endmacro %}
+
+<!-- Acknowledgements -->
+{% macro acknowledgements(section_data,pagenumber) %}
+<section id="{{ section_data.section_id }}" class="bg-page-gray pb-5">
+    <div class="container mb-4 pt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-11 mt-4">
+                <p class="acknowledgements">{{ section_data.title }}</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-11">
+                <!-- Applying style directly in the macro -->
+                <i>{{ section_data.text | safe }}</i>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-11">
+                <!-- No specific style needed here as it's copyright info -->
+                {{ section_data.copyright_info | safe }}
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5 mb-5 bg-data-Acknowledgements">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-11 bg-light ml-4">
+                    <div class="row p-5 data-Acknowledgements">
+                        <span class="pleca-data"></span>
+                        <!-- Loop through address list and apply formatting -->
+                        {% for address in section_data.address_list %}
+                        <div class="col-md-3 mb-3">
+                            <p class="m-0">{{ address.text | safe }}</p>
+                        </div>
+                        {% endfor %}
+                        <div class="col-md-3">
+                            <p class="m-0">
+                                <!-- Loop through social links and apply formatting -->
+                                {% for link in section_data.links %}
+                                <a href="{{ link.url }}">
+                                    <span class="mr-2"><img src="{{ link.icon }}" width="20px"></span>
+                                    {{ link.text }}
+                                </a>
+                                {% endfor %}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-number">{section_data.pagenumber} </div>
+</section>
+{% endmacro %}
+
+
+<!-- About -->
+{% macro about(section_data, pagenumber) %}
+<section id="{{ section_data.section_id }}" class="bg-purple">
+    <div class="container">
+        <div class="height85vh">
+            <div class="row h-100 p-5">
+                <div class="col-12">
+                    <div class="row align-items-center h-100">
+                        <div class="col-12">
+                            <div class="row justify-content-center">
+                                <div class="col-md-4 border-left pl-4">
+                                    <h3 class="text-white mb-0">
+                                        {{ section_data.title or '' | safe }}
+                                    </h3>
+                                </div>
+                            </div>
+                            {% if section_data.links is iterable and section_data.links %}
+                            <div class="row justify-content-center mt-5">
+                                <div class="col-md-4">
+                                    {% for link in section_data.links %}
+                                    <p class="li mb-0 text-white"><a href="{{ link.href }}">{{ link.text }}</a></p>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endmacro %}
+
+
+
+<!-- About This Report -->
+{% macro about_this_report(section_data,pagenumber) %}
+<section id="AboutThisReport" class="bg-page-gray">
+    <div class="container pt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-11 mt-4">
+                <p class="title-p">{{section_data.title or '' | safe}}</p>
+            </div>
+        </div>
+        {% if section_data.text is iterable and section_data.text %}
+        <div class="row justify-content-center">
+            {% for text in section_data.text %}
+                {% if text.type == 'paragraph' %}
+                    <div class="col-md-11">
+                        <p>{{ text.content }}</p>
+                    </div>
+                {% elif text.type == 'quote' %}
+                    <div class="col-md-11 bg-quote p-5">
+                        <i>{{ text.content }}</i>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</section>
+{% endmacro %}
+
+<!-- Executive Findings -->
+{% macro executive_findings(section_data,pagenumber) %}
+<section id="{{ section_data.section_id }}">
+    <div class="container mb-4 pt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-11 mt-4">
+                <p class="title-p">{{ section_data.title }}</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-11">
+                <div class="row">
+                    <div class="col-md-12 mb-0">
+                        {% if section_data.text %}
+                        <span><i>{{ section_data.text[0] | safe }}</i> {{ section_data.text[1] | safe }}</span>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-number">{{ section_data.page_info }}</div>
+</section>
+{% endmacro %}
+
+<!-- Section I -->
+{% macro thematic_findings(section_data, pagenumber) %}
+<section id="{{ section_data.section_id }}" class="bg-purple">
+    <div class="container">
+        <div class="height85vh">
+            <div class="row h-100 p-5">
+                <div class="col-12">
+                    <div class="box-title">
+                        <p>THEMATIC FINDINGS</p>
+                    </div>
+                    <div class="row align-items-center h-100">
+                        <div class="col-12">
+                            <div class="row justify-content-center">
+                                <div class="col-md-4 border-left pl-4">
+                                    <h3 class="text-white mb-0">{{ section_data.title | safe }}</h3>
+                                    <p class="text-white mb-0">{{ section_data.subtitle }}</p>
+                                </div>
+                            </div>
+                            {% if section_data.links is iterable %}
+                            <div class="row justify-content-center mt-5">
+                                <div class="col-md-4">
+                                    {% for finding in section_data.links %}
+                                    <p class="li mb-0 text-white">
+                                        <span>{{ pagenumber[finding.link] }}</span>
+                                        <a href="{{ finding.link }}">{{ finding.text }}</a>
+                                    </p>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endmacro %}
+
+
+<!-- Chart 1 -->
+{% macro chart_map(section_data, pagenumber) %}
+<section id="{{ section_data.section_id }}" class="chart-section">
+    <div class="container pt-4">
+        <p class="title-p">{{ section_data.title }}</p>
+        <p class="mb-2"><i>{{ section_data.subtitle }}</i></p>
+        <div class="row justify-content-center mb-3">
+            <div class="col-md-11 ml-4 bl-purple">
+                <p class="mb-0 ff-a c-purple">{{ section_data.chart_title }}</p>
+                <p class="fs-20 mb-0">{{ section_data.chart_subtitle }}</p>
+                <p class="mb-2"><i>{{ section_data.description }}</i></p>
+            </div>
+        </div>
+        {% if section_data.statements is iterable %}
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-11">
+                {% if section_data.statements %}
+                {% for statement in section_data.statements %}
+                <div class="col-md-5 mb-4">
+                    <p class="mb-0">
+                        <span class="bullet-square" style="background-color: {{ statement.color }};"></span>
+                        <span class="text-chart">{{ statement.text }}</span>
+                    </p>
+                </div>
+                {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+        <div class="row justify-content-center">
+            <div class="col-md-11 text-center">
+                <img src="{{ section_data.imagepath }}" class="img-fluid" alt="Chart Image">
+            </div>
+        </div>
+        {% if section_data.footnote %}
+        <div class="row justify-content-center mt-5 foot-note">
+            <div class="col-md-11 mb-0">
+                <p class="reference"><small>{{ section_data.footnote | safe }}</small></p>
+            </div>
+        </div>
+        {% endif %}
+        <div class="page-number text-center">II Thematic Findings <b>{{ section_data.pagenumber }}</b></div>
+    </div>
+</section>
+{% endmacro %}

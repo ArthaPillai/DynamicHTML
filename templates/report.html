@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report Page</title>
+    <link rel="stylesheet" href="static/css/edit_styles.css" media="all">
+    <link rel="stylesheet" href="static/css/estilos-impresion.css" media="print">
+    <link rel="stylesheet" href="static/css/styles.css" media="all">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="static/css/sidebar.css">
+</head>
+<body>
+
+{% import 'macros.html' as macros %}
+
+{{ macros.cover(section_data['Cover'],pagenumber) }}
+
+{{ macros.chart_map(section_data['Acknowledgements'], pagenumber) }}
+
+{{ macros.about(section_data['About'],pagenumber) }}
+
+{{ macros.about_this_report(section_data['AboutThisReport'],pagenumber) }}
+
+{{ macros.executive_findings(section_data['Executive Findings'], pagenumber) }}
+
+{{ macros.thematic_findings(section_data['Section I'], pagenumber) }}
+
+{{ macros.chart_map(section_data['Chart 1'], pagenumber) }}
+
+</body>
+</html>
+
+    

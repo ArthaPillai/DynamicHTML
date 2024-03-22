@@ -1,0 +1,447 @@
+
+
+/***************** Charts legend  *****************/
+
+/*------------- EastCaribbean ----------------*/
+
+/*Antigua and Barbuda*/
+.c-antigua-barbuda{
+    background: #2a2a94;
+}
+
+/*“Barbados*/
+.c-barbados{
+    background: #a90099;
+}
+
+/*Dominica”*/
+.c-dominica{
+    background: #3273ff;
+}
+
+/*Grenada*/
+.c-grenada{
+    background: #fa4d57;
+}
+
+/*St. Kitts and Nevis*/
+.c-st-kitts-nevis{
+    background: #9d61f2;
+}
+
+/*St. Lucia*/
+.c-st-lucia{
+    background: #43a9a7;
+}
+
+/*St. Vincent and the Grenadines*/
+.c-vincent-grenadines{
+    background: #efa700;
+}
+
+/*Trinidad and Tobago*/
+.c-trinidad-tobago{
+    background: #2c6d4f;
+}
+
+
+/*------------- WestCaribbean_and_guianas ----------------*/
+
+/*Bahamas*/
+.c-bahamas{
+    background: #2a2a94;
+}
+
+/*Dominican Republic*/
+.c-dominican-republic{
+    background: #a90099;
+}
+
+/*Guyana*/
+.c-guyana{
+    background: #3273ff;
+}
+
+/*Haiti*/
+.c-haiti{
+    background: #fa4d57;
+}
+
+/*Jamaica*/
+.c-jamaica”{
+    background: #9d61f2;
+}
+
+/*Suriname*/
+.c-suriname{
+    background: #43a9a7;
+}
+
+
+/*------------- SouthCone ----------------*/
+
+/*Argentina*/
+.c-argentina{
+    background: #a90099;
+}
+
+/*Brazil*/
+.c-brazil{
+    background: #3273ff;
+}
+
+/*Paraguay*/
+.c-paraguay{
+    background: #2a2a94;
+}
+
+/*------------- AndeanCountries ----------------*/
+
+/*Bolivia*/
+.c-bolivia{
+    background: #a90099;
+}
+
+/*Colombia*/
+.c-colombia{
+    background: #2a2a94;
+}
+
+/*Ecuador*/
+.c-ecuador{
+    background: #3273ff;
+}
+
+/*Peru*/
+.c-peru{
+    background: #fa4d57;
+}
+
+
+/*------------- CentralAmerica ----------------*/
+
+/*Belize*/
+.c-belize{
+    background: #2a2a94;
+}
+
+/*Costa Rica*/
+.c-costa-rica”{
+    background: #a90099;
+}
+
+/*El Salvador*/
+.c-el-salvador{
+    background: #3273ff;
+}
+
+/*Guatemala*/
+.c-guatemala{
+    background: #fa4d57;
+}
+
+/*Honduras*/
+.c-honduras{
+    background: #9d61f2;
+}
+
+/*Nicaragua*/
+.c-nicaragua{
+    background: #43a9a7;
+}
+
+/*Panama*/
+.c-panama{
+    background: #efa700;
+}
+
+/*------------- G7 ----------------*/
+/*Canada*/
+.c-canada{
+    background: #efa700;
+}
+
+/*France*/
+.c-france{
+    background: #a90099;
+}
+
+/*Germany*/
+.c-germany{
+    background: #3273ff;
+}
+
+/*Italy*/
+.c-italy{
+    background: #fa4d57;
+}
+
+/*Japan*/
+.c-japan{
+    background: #9d61f2;
+}
+
+/*United Kingdom*/
+.c-uk{
+    background: #43a9a7;
+}
+
+/*United States*/
+.c-usa{
+    background: #2a2a94;
+}
+
+
+/***************** Colors  *****************/
+
+/*Navy*/
+.bg-navy {
+    background: #2a2a9a;
+}
+
+/*Grape*/
+.bg-grape {
+  background: #b374ff;
+}
+
+/*Blue*/
+.bg-blue {
+    background: #3273ff;
+}
+
+/*Violet*/
+.bg-violet {
+    background: #a90099;
+}
+
+/*Red*/
+.bg-red {
+    background: #f0585f;
+}
+
+/*Gray*/
+.bg-gray {
+    background: #CCC;
+}
+
+/*------------- Diamond ------------------------*/
+
+.diamond {
+    font-size: 22px;
+}
+
+/*------------- AndeanCountries ----------------*/
+/*Bolivia*/
+.dia-bolivia{
+    color: #a90099;
+}
+
+/*Colombia*/
+.dia-colombia{
+    color: #2a2a94;
+}
+
+/*Ecuador*/
+.dia-ecuador{
+    color: #3273ff;
+}
+
+/*Peru*/
+.dia-peru{
+    color: #fa4d57;
+}
+
+/*------------- CentralAmerica ----------------*/
+
+/*Belize*/
+.dia-belize{
+    color: #2a2a94;
+}
+
+/*Costa Rica*/
+.dia-costa-rica”{
+    color: #a90099;
+}
+
+/*El Salvador*/
+.dia-el-salvador{
+    color: #3273ff;
+}
+
+/*Guatemala*/
+.dia-guatemala{
+    color: #fa4d57;
+}
+
+/*Honduras*/
+.dia-honduras”{
+    color: #9d61f2;
+}
+
+/*Nicaragua*/
+.dia-nicaragua{
+    color: #43a9a7;
+}
+
+/*Panama*/
+.dia-panama{
+    color: #efa700;
+}
+
+/*------------- EastCaribbean ----------------*/
+
+/*Antigua and Barbuda*/
+.dia-antigua-barbuda{
+    color: #2a2a94;
+}
+
+/*“Barbados*/
+.dia-barbados{
+    color: #a90099;
+}
+
+/*Dominica”*/
+.dia-dominica{
+    color: #3273ff;
+}
+
+/*Grenada*/
+.dia-grenada{
+    color: #fa4d57;
+}
+
+/*St. Kitts and Nevis*/
+.dia-st-kitts-nevis{
+    color: #9d61f2;
+}
+
+/*St. Lucia*/
+.dia-st-lucia{
+    color: #43a9a7;
+}
+
+/*St. Vincent and the Grenadines*/
+.dia-vincent-grenadines{
+    color: #efa700;
+}
+
+/*Trinidad and Tobago*/
+.dia-trinidad-tobago{
+    color: #2c6d4f;
+}
+
+
+/*------------- WestCaribbean_and_guianas ----------------*/
+
+/*Bahamas*/
+.dia-bahamas{
+    color: #2a2a94;
+}
+
+/*Dominican Republic*/
+.dia-dominican-republic{
+    color: #a90099;
+}
+
+/*Guyana*/
+.dia-guyana{
+    color: #3273ff;
+}
+
+/*Haiti*/
+.dia-haiti{
+    color: #fa4d57;
+}
+
+/*Jamaica*/
+.dia-jamaica”{
+    color: #9d61f2;
+}
+
+/*Suriname*/
+.dia-suriname{
+    color: #43a9a7;
+}
+
+
+/*------------- SouthCone ----------------*/
+
+/*Argentina*/
+.dia-argentina{
+    color: #a90099;
+}
+
+/*Brazil*/
+.dia-brazil{
+    color: #3273ff;
+}
+
+/*Paraguay*/
+.dia-paraguay{
+    color: #2a2a94;
+}
+
+/*------------- G7 ----------------*/
+/*Canada*/
+.dia-canada{
+    color: #efa700;
+}
+
+/*France*/
+.dia-france{
+    color: #a90099;
+}
+
+/*Germany*/
+.dia-germany{
+    color: #3273ff;
+}
+
+/*Italy*/
+.dia-italy{
+    color: #fa4d57;
+}
+
+/*Japan*/
+.dia-japan{
+    color: #9d61f2;
+}
+
+/*United Kingdom*/
+.dia-uk{
+    color: #43a9a7;
+}
+
+/*United States*/
+.dia-usa{
+    color: #2a2a94;
+}
+
+/***************** Charts legend (Constraints) *****************/
+/***************** Colors  *****************/
+
+/*Dark Blue*/
+.bg-VeryLikely {
+    background: #2a2a94;
+}
+
+/*Violet 2*/
+.bg-Likely {
+  background: #a90099;
+}
+
+/*Light Blue*/
+.bg-Unlikely {
+    background: #3273ff;
+}
+
+/*Light Green*/
+.bg-VeryUnlikely {
+    background: #43a9a7;
+}
+
+.w-adj {
+    width: 75%;
+    margin-top: -40px !important;
+    margin-bottom: -150px !important;
+}
