@@ -26,7 +26,7 @@ def report():
         parsed_section_data[row['section']] = row_dict
 
     # Print the data whenever you need to debug
-    print(json.dumps(parsed_section_data, indent=4))
+    #print(json.dumps(parsed_section_data, indent=4))
 
     return render_template('report.html', section_data=parsed_section_data, pagenumber = pagenumber)
 

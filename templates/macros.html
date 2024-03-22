@@ -33,13 +33,11 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-md-11">
-                <!-- Applying style directly in the macro -->
                 <i>{{ section_data.text | safe }}</i>
             </div>
         </div>
         <div class="row justify-content-center">
             <div class="col-md-11">
-                <!-- No specific style needed here as it's copyright info -->
                 {{ section_data.copyright_info | safe }}
             </div>
         </div>
@@ -50,7 +48,6 @@
                 <div class="col-md-11 bg-light ml-4">
                     <div class="row p-5 data-Acknowledgements">
                         <span class="pleca-data"></span>
-                        <!-- Loop through address list and apply formatting -->
                         {% for address in section_data.address_list %}
                         <div class="col-md-3 mb-3">
                             <p class="m-0">{{ address.text | safe }}</p>
@@ -58,7 +55,6 @@
                         {% endfor %}
                         <div class="col-md-3">
                             <p class="m-0">
-                                <!-- Loop through social links and apply formatting -->
                                 {% for link in section_data.links %}
                                 <a href="{{ link.url }}">
                                     <span class="mr-2"><img src="{{ link.icon }}" width="20px"></span>
